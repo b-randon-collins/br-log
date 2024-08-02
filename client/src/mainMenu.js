@@ -1,7 +1,7 @@
-// MainMenu.js
+// mainMenu.js
+import { handleClick } from "./index.js";
 
 async function fetchMenuItems() {
-  console.log("fetchMenuItems");
   try {
     const response = await fetch("http://localhost:3041/menu");
     const menuItems = await response.json();
@@ -13,8 +13,6 @@ async function fetchMenuItems() {
 }
 
 function generateMenuHTML(menuItems) {
-      console.log("generateMenuHTML");
-
   const menu = document.createElement("nav");
   menu.id = "main-menu";
 
@@ -24,6 +22,9 @@ function generateMenuHTML(menuItems) {
     const a = document.createElement("a");
     a.href = item.url;
     a.textContent = item.name;
+
+    a.addEventListener("click", handleClick);
+
     li.appendChild(a);
     ul.appendChild(li);
   });
@@ -33,9 +34,11 @@ function generateMenuHTML(menuItems) {
 }
 
 export async function renderMainMenu() {
-    console.log("renderMainMenu");
-
   const menuItems = await fetchMenuItems();
   const menu = generateMenuHTML(menuItems);
-  document.body.appendChild(menu);
+
+  const mainMenuDiv = document.querySelector("#main-menu");
+  mainMenuDiv.innerHTML = "";
+
+  mainMenuDiv.appendChild(menu);
 }

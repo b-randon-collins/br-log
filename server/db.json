@@ -2,15 +2,980 @@
   "menu": [
     {
       "name": "Home",
-      "url": "/"
+      "url": "/",
+      "id": "1"
+    },
+    {
+      "name": "+",
+      "url": "/articles/create/",
+      "id": "2"
     },
     {
       "name": "Articles",
-      "url": "/articles"
+      "url": "/articles",
+      "id": "3"
     },
     {
-      "name": "About Me",
-      "url": "/about-me"
+      "name": "+",
+      "url": "/subjects/create/",
+      "id": "4"
+    },
+    {
+      "name": "Subjects",
+      "url": "/subjects",
+      "id": "5"
+    },
+    {
+      "name": "Tools",
+      "url": "/tools",
+      "id": "6"
+    },
+    {
+      "name": "Log",
+      "url": "/log",
+      "id": "7"
+    }
+  ],
+  "lessons": [
+    {
+      "title": "Component Lifecycle Methods",
+      "id": "8",
+      "description": "Understanding React component lifecycle methods.",
+      "body": "React components go through a lifecycle from creation to removal. This lesson covers lifecycle methods like componentDidMount and componentDidUpdate, showing how to handle side effects and perform data fetching during different phases of a component's life.",
+      "parentId": "3"
+    },
+    {
+      "title": "",
+      "description": "",
+      "id": "9",
+      "body": "",
+      "parentId": ""
+    },
+    {
+      "title": "React Hooks Overview",
+      "id": "10",
+      "description": "An overview of React Hooks.",
+      "body": "React Hooks allow using state and other React features without writing class components. This lesson covers basic hooks like useState and useEffect, and explains how to manage state and side effects in functional components using these hooks.",
+      "parentId": "3"
+    },
+    {
+      "title": "HTML Basics",
+      "id": "11",
+      "description": "Fundamentals of HTML.",
+      "body": "This lesson covers the fundamentals of HTML, including its syntax, elements, and attributes. You'll learn how to structure web pages using HTML tags and create basic web content.",
+      "parentId": "4"
+    },
+    {
+      "title": "HTML Forms",
+      "id": "12",
+      "description": "Creating and managing HTML forms.",
+      "body": "Forms are essential for collecting user input. This lesson explores various form elements and attributes, such as input fields, checkboxes, and radio buttons, and how to use them to create interactive forms.",
+      "parentId": "4"
+    },
+    {
+      "title": "CSS Fundamentals",
+      "id": "13",
+      "description": "Basics of CSS styling.",
+      "body": "CSS (Cascading Style Sheets) is used to style HTML elements. This lesson introduces CSS syntax, selectors, and properties, and demonstrates how to apply styles to create visually appealing web pages.",
+      "parentId": "5"
+    },
+    {
+      "title": "Responsive Design",
+      "id": "14",
+      "description": "Techniques for creating responsive web designs.",
+      "body": "Responsive design ensures web pages look good on all devices. This lesson covers media queries, flexible grid layouts, and responsive images to create designs that adapt to different screen sizes.",
+      "parentId": "5"
+    },
+    {
+      "title": "Basic Terminal Commands",
+      "id": "15",
+      "description": "Essential commands for terminal navigation.",
+      "body": "This lesson covers essential Bash commands for file and directory management, including ls, cd, mkdir, and rm. Understanding these commands is fundamental for navigating and managing files in the terminal.",
+      "parentId": "6"
+    },
+    {
+      "title": "Using Pipelines and Redirection",
+      "id": "16",
+      "description": "Techniques for handling data between commands.",
+      "body": "Pipelines and redirection allow for efficient data handling between commands. This lesson explains how to use pipes (|) to pass output between commands and redirection (>, >>) to save or read files.",
+      "parentId": "6"
+    },
+    {
+      "title": "ZSH Basics",
+      "id": "17",
+      "description": "Introduction to ZSH and its features.",
+      "body": "ZSH (Z Shell) offers advanced features and customization options compared to Bash. This lesson introduces ZSH syntax, configuration, and unique features that enhance the command-line experience.",
+      "parentId": "7"
+    },
+    {
+      "title": "Advanced ZSH Features",
+      "id": "18",
+      "description": "Exploring advanced ZSH capabilities.",
+      "body": "Explore advanced ZSH capabilities, including plugins, themes, and improved tab completion. Learn how to customize your ZSH environment to streamline your workflow and enhance productivity.",
+      "parentId": "7"
+    },
+    {
+      "title": "Introduction to Apache",
+      "id": "19",
+      "description": "Basics of Apache web server.",
+      "body": "Apache is a versatile web server that supports various web technologies. This lesson covers Apache's architecture, configuration, and basic setup for hosting web applications.",
+      "parentId": "8"
+    },
+    {
+      "title": "Apache Modules and Configuration",
+      "id": "20",
+      "description": "Understanding Apache modules and configuration.",
+      "body": "Apache modules extend its functionality. This lesson explores commonly used modules, configuration directives, and how to customize Apache to meet specific hosting requirements.",
+      "parentId": "8"
+    },
+    {
+      "title": "PHP Basics",
+      "id": "21",
+      "description": "Introduction to PHP syntax and usage.",
+      "body": "PHP is a server-side scripting language used for web development. This lesson covers PHP syntax, variables, and basic constructs for creating dynamic web pages.",
+      "parentId": "9"
+    },
+    {
+      "title": "Working with Databases",
+      "id": "22",
+      "description": "Connecting PHP with databases.",
+      "body": "Learn how to connect PHP applications to databases like MySQL. This lesson covers database operations such as querying, inserting, and updating data using PHP's MySQLi and PDO extensions.",
+      "parentId": "9"
+    },
+    {
+      "title": "Introduction to JavaScript",
+      "id": "23",
+      "description": "A beginner's guide to JavaScript.",
+      "body": "JavaScript is a versatile programming language used primarily for web development. This lesson covers the basics of JavaScript, including its history, syntax, and fundamental concepts.",
+      "parentId": "1",
+      "content": "JavaScript was initially created by Brendan Eich in 1995 to make web pages interactive. Initially called Mocha, then LiveScript, it was finally named JavaScript. Despite the name, JavaScript is not related to Java. Over the years, JavaScript has become one of the core technologies of the World Wide Web, alongside HTML and CSS. It enables dynamic content such as interactive forms, animations, and complex user interfaces.\n\nJavaScript syntax is similar to C, C++, and Java, making it easier for developers familiar with these languages to learn. It uses a combination of variables, data types, operators, and control structures to create logic. Variables can be declared using var, let, or const, with let and const being block-scoped, introduced in ES6.\n\nBasic data types in JavaScript include numbers, strings, booleans, objects, arrays, null, and undefined. JavaScript is a dynamically typed language, meaning variable types are determined at runtime and can change as the program executes. Understanding these basics is crucial for diving deeper into JavaScript programming."
+    },
+    {
+      "title": "JavaScript Data Types",
+      "id": "24",
+      "description": "Understanding JavaScript data types.",
+      "body": "JavaScript has various data types such as strings, numbers, booleans, objects, arrays, null, and undefined. This lesson explores these data types and how to use them in your programs.",
+      "parentId": "1",
+      "content": "In JavaScript, data types are divided into primitive types and objects. Primitive types include strings, numbers, booleans, null, undefined, and the symbol type introduced in ES6. Strings are sequences of characters used to represent text, numbers include both integers and floating-point values, and booleans represent true or false values. Null is a special keyword indicating a deliberate non-value, while undefined means a variable has been declared but not yet assigned a value.\n\nObjects are collections of key-value pairs and can include arrays, which are ordered lists of values. Arrays have a variety of methods, such as push (to add elements), pop (to remove elements), and slice (to extract a section of the array). Objects can also be manipulated using methods like Object.keys, Object.values, and Object.entries, which provide ways to iterate over object properties.\n\nUnderstanding the difference between null and undefined is crucial. Null is an assignment value that represents no value or object, whereas undefined indicates the absence of a value. Additionally, JavaScript's type coercion can sometimes lead to unexpected results, making it important to use strict equality (===) to avoid type conversion issues."
+    },
+    {
+      "title": "Control Structures",
+      "id": "25",
+      "description": "Using control structures in JavaScript.",
+      "body": "Control structures like if-else, switch, loops (for, while, do-while) are essential for directing the flow of your program. This lesson covers these structures and provides examples of their usage.",
+      "parentId": "1",
+      "content": "Control structures in JavaScript allow developers to dictate the flow of the program based on different conditions and iterations. The if-else statement executes a block of code if a specified condition is true and another block if it is false. Nested if-else statements can handle multiple conditions, but excessive nesting should be avoided for readability.\n\nSwitch statements provide an alternative to if-else when dealing with multiple conditions based on a single variable's value. They improve readability and are often more efficient. Each case in a switch statement ends with a break to prevent fall-through, although deliberate fall-through can be useful in certain scenarios.\n\nLoops are essential for repeating a block of code multiple times. The for loop is ideal for iterating over a known range, while the while loop continues as long as a specified condition is true. The do-while loop is similar to the while loop, but it guarantees that the loop body is executed at least once. Proper use of loops is crucial for tasks like iterating over arrays or processing data until a condition is met.\n\nJavaScript also provides the for...in and for...of loops. The for...in loop is used to iterate over object properties, while the for...of loop, introduced in ES6, is used to iterate over iterable objects like arrays, strings, and NodeLists. Choosing the right control structure can greatly enhance the efficiency and readability of your code."
+    },
+    {
+      "title": "Functions in JavaScript",
+      "id": "26",
+      "description": "Creating and using functions in JavaScript.",
+      "body": "Functions are reusable blocks of code that perform specific tasks. This lesson covers function declarations, expressions, arrow functions, and the differences between them.",
+      "parentId": "1",
+      "content": "Functions in JavaScript are first-class objects, meaning they can be stored in variables, passed as arguments to other functions, and returned from other functions. There are several ways to define functions: function declarations, function expressions, and arrow functions.\n\nFunction declarations are hoisted, meaning they can be called before they are defined in the code. This is useful for organizing code in a top-down manner. Function expressions, on the other hand, are not hoisted and are often used to create anonymous functions. These can be assigned to variables or used as arguments to other functions.\n\nArrow functions, introduced in ES6, provide a concise syntax for writing functions. They are particularly useful for non-method functions and do not have their own 'this' context, which is inherited from the parent scope. This makes arrow functions ideal for callbacks and array methods like map, filter, and reduce.\n\nUnderstanding the differences between these types of functions and their appropriate use cases is essential for writing clean and efficient JavaScript code. Functions also support default parameters, rest parameters, and the spread operator, allowing for more flexible and concise function definitions."
+    },
+    {
+      "title": "JavaScript Arrays",
+      "id": "27",
+      "description": "Working with arrays in JavaScript.",
+      "body": "Arrays are used to store multiple values in a single variable. This lesson covers array methods such as push, pop, shift, unshift, map, filter, and reduce.",
+      "parentId": "1",
+      "content": "Arrays in JavaScript are dynamic and can hold any type of data, making them extremely versatile. They are created using square brackets, and elements are accessed via their index, starting from zero. JavaScript provides a rich set of methods to manipulate arrays efficiently.\n\nThe push method adds one or more elements to the end of an array, while pop removes the last element. Similarly, shift removes the first element, and unshift adds one or more elements to the beginning of the array. These methods are useful for modifying arrays in place.\n\nHigher-order functions like map, filter, and reduce provide powerful ways to process arrays. The map method creates a new array with the results of calling a provided function on every element in the calling array. It is ideal for transforming data. The filter method creates a new array with all elements that pass the test implemented by the provided function, making it useful for selecting specific elements from an array.\n\nThe reduce method applies a function against an accumulator and each element in the array to reduce it to a single value. It is often used for summing or combining array values. Understanding these methods and when to use them can greatly enhance your ability to work with arrays in JavaScript."
+    },
+    {
+      "title": "Objects in JavaScript",
+      "id": "28",
+      "description": "Understanding JavaScript objects.",
+      "body": "Objects are key-value pairs used to store collections of data. This lesson explores object creation, manipulation, and methods like Object.keys, Object.values, and Object.entries.",
+      "parentId": "1",
+      "content": "Objects in JavaScript are collections of key-value pairs where each key is a string (or Symbol) and each value can be of any type. They provide a way to group related data and functionalities. Objects are created using curly braces, with key-value pairs separated by commas.\n\nProperties and methods can be added to objects dynamically. The dot notation or bracket notation can be used to access or modify properties. The delete operator is used to remove properties from an object. JavaScript also supports nested objects, where objects can contain other objects, arrays, and functions.\n\nMethods like Object.keys, Object.values, and Object.entries provide ways to iterate over object properties. Object.keys returns an array of a given object's own enumerable property names, Object.values returns an array of a given object's own enumerable property values, and Object.entries returns an array of a given object's own enumerable property [key, value] pairs. These methods are useful for tasks like cloning objects, merging objects, and iterating over object properties.\n\nUnderstanding objects and their manipulation is crucial for managing data in JavaScript applications. ES6 introduced new features like computed property names, shorthand property names, and object destructuring, which simplify working with objects."
+    },
+    {
+      "title": "JavaScript Promises",
+      "id": "29",
+      "description": "Managing asynchronous operations with promises.",
+      "body": "Promises are used to handle asynchronous operations in JavaScript. This lesson covers creating, resolving, rejecting promises, and chaining them with then and catch.",
+      "parentId": "1",
+      "content": "Promises in JavaScript provide a way to handle asynchronous operations more efficiently and avoid callback hell. A promise represents a value that may be available now, in the future, or never. Promises have three states: pending, fulfilled, and rejected.\n\nA promise is created using the Promise constructor, which takes a function with two arguments: resolve and reject. The resolve function is called when the asynchronous operation completes successfully, and the reject function is called when it fails. Once a promise is settled (fulfilled or rejected), it cannot change states.\n\nPromises are typically chained using the then method, which takes two arguments: a callback for the resolved value and a callback for the rejected value. The catch method is a shorthand for then(null, rejectionCallback) and is used to handle errors. Promises can be combined using methods like Promise.all, which takes an array of promises and returns a single promise that resolves when all the promises in the array resolve, or rejects if any promise in the array rejects.\n\nUsing promises makes asynchronous code more readable and maintainable. ES6 introduced native support for promises, and they are widely used in modern JavaScript applications for tasks like fetching data from APIs, handling user interactions, and performing background operations."
+    },
+    {
+      "title": "Async/Await in JavaScript",
+      "id": "30",
+      "description": "Simplifying asynchronous code with async/await.",
+      "body": "Async/await is a syntax for writing asynchronous code in a synchronous manner. This lesson covers how to use async functions and the await keyword to handle promises more cleanly.",
+      "parentId": "1",
+      "content": "Async/await, introduced in ES8, provides a way to write asynchronous code in a synchronous style, making it easier to read and debug. An async function returns a promise, and the await keyword can be used inside an async function to pause its execution until the awaited promise is resolved or rejected.\n\nTo define an async function, simply prefix the function keyword with async. Within an async function, use the await keyword before a promise to pause the function execution until the promise settles. The result of the awaited promise is returned, allowing you to write code that looks synchronous but executes asynchronously.\n\nAsync/await simplifies error handling in asynchronous code. You can use try/catch blocks to handle errors in the same way as synchronous code. If an awaited promise is rejected, the error is thrown and can be caught by a surrounding try/catch block. This approach makes asynchronous code easier to write and understand.\n\nUsing async/await can improve the readability and maintainability of your code, especially when dealing with multiple asynchronous operations. It eliminates the need for chaining then and catch methods and provides a more straightforward way to work with promises."
+    },
+    {
+      "title": "JavaScript Closures",
+      "id": "31",
+      "description": "Understanding closures in JavaScript.",
+      "body": "Closures are functions that have access to their outer scope even after the outer function has returned. This lesson explains closures and provides practical examples of their usage.",
+      "parentId": "1",
+      "content": "Closures in JavaScript are a powerful feature that allows a function to access variables from its outer (enclosing) function even after the outer function has returned. This behavior is possible because JavaScript functions form closures over the scope in which they were defined.\n\nA closure is created when a function is defined inside another function and the inner function references variables from the outer function. Even after the outer function has finished executing, the inner function retains access to the outer function's variables. This capability is useful for creating private variables and functions, as well as for implementing factory functions and modules.\n\nFor example, consider the following code:\n\n```javascript\nfunction outerFunction() {\n  let outerVariable = 'I am outside!';\n  function innerFunction() {\n    console.log(outerVariable);\n  }\n  return innerFunction;\n}\nconst inner = outerFunction();\ninner(); // logs 'I am outside!'\n```\n\nIn this example, `innerFunction` forms a closure over `outerVariable`, allowing it to access `outerVariable` even after `outerFunction` has returned.\n\nClosures are widely used in JavaScript, from simple event handlers to more complex scenarios like asynchronous programming and data encapsulation. Understanding closures and their applications can greatly enhance your ability to write effective and efficient JavaScript code."
+    },
+    {
+      "title": "Iterating Through Data",
+      "id": "32",
+      "description": "Techniques for iterating through data in JavaScript.",
+      "body": "This lesson covers various methods for iterating over data structures in JavaScript, including for loops, forEach, map, filter, and reduce, and their appropriate use cases.",
+      "parentId": "1",
+      "content": "JavaScript provides several methods for iterating over data structures, each with its own use cases and advantages. The traditional for loop is versatile and can be used to iterate over arrays, objects, and other iterable structures. It provides full control over the iteration process but can be verbose for simple tasks.\n\nThe forEach method is an array method that executes a provided function once for each array element. It is more concise than a for loop and is often used for side effects, such as modifying each element in an array or performing an action for each element. However, it does not return a new array or allow for breaking out of the loop early.\n\nThe map method creates a new array with the results of calling a provided function on every element in the calling array. It is ideal for transforming data without mutating the original array. The filter method creates a new array with all elements that pass the test implemented by the provided function. It is useful for selecting specific elements from an array based on a condition.\n\nThe reduce method applies a function against an accumulator and each element in the array to reduce it to a single value. It is often used for aggregating data, such as summing numbers or combining objects. Reduce is powerful but can be complex to use, requiring a clear understanding of how the accumulator and current value interact.\n\nChoosing the right iteration method depends on the task at hand. Use for loops when you need full control over the iteration process, forEach for side effects, map for transforming data, filter for selecting elements, and reduce for aggregating data. Understanding these methods and their appropriate use cases can greatly enhance your ability to work with data in JavaScript."
+    }
+  ],
+  "subjects": [
+    {
+      "title": "JavaScript",
+      "description": "A versatile programming language used for web development, server-side scripting, and more.",
+      "id": "1",
+      "imageUrl": "/images/jslogo.webp"
+    },
+    {
+      "title": "Python",
+      "description": "A high-level programming language known for its readability and broad applicability in various domains.",
+      "id": "2",
+      "imageUrl": "/images/python123.png"
+    },
+    {
+      "title": "React",
+      "description": "A JavaScript library for building user interfaces, particularly single-page applications.",
+      "id": "3",
+      "body": "React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components.” React's component-based architecture and virtual DOM make it a powerful tool for creating dynamic web applications.",
+      "imageUrl": "/images/react.webp"
+    },
+    {
+      "title": "HTML",
+      "description": "The standard markup language for creating web pages and web applications.",
+      "id": "4",
+      "body": "HTML (HyperText Markup Language) is the standard language for creating web pages. It provides the basic structure for web documents and allows for embedding multimedia, creating forms, and linking to other documents. HTML is fundamental to web development and works in conjunction with CSS and JavaScript.",
+      "imageUrl": "/images/html.png"
+    },
+    {
+      "title": "CSS",
+      "description": "A stylesheet language used for describing the presentation of a document written in HTML or XML.",
+      "id": "5",
+      "body": "CSS (Cascading Style Sheets) controls the look and feel of web pages. It allows developers to apply styles to HTML elements, including colors, layouts, and fonts. CSS enhances the visual appearance of web pages and enables responsive design to adapt to different screen sizes.",
+      "imageUrl": "/images/css-icon.webp"
+    },
+    {
+      "title": "Bash",
+      "description": "A Unix shell and command language for automating tasks and managing system operations.",
+      "id": "6",
+      "body": "Bash (Bourne Again SHell) is a Unix shell and command language that allows users to interact with the operating system through a command-line interface. It is widely used for scripting and automating tasks, managing system operations, and performing file manipulations.",
+      "imageUrl": "/images/bash.webp"
+    },
+    {
+      "title": "VS Code",
+      "description": "--------------",
+      "id": "6",
+      "body": "------------------",
+      "imageUrl": "/images/vs.png"
+    },
+    {
+      "title": "ZSH",
+      "description": "A powerful shell that extends Bash with additional features and improved scripting capabilities.",
+      "id": "7",
+      "body": "ZSH (Z Shell) is an extended version of the Bourne Shell with additional features and improvements. It offers advanced scripting capabilities, enhanced tab completion, and customizable prompts, making it a popular choice for power users and developers.",
+      "imageUrl": "/images/zsh.png"
+    },
+    {
+      "title": "Apache",
+      "description": "A widely-used web server software known for its flexibility and strong community support.",
+      "id": "8",
+      "body": "Apache is a popular web server software that provides a robust and flexible platform for hosting web applications. It supports various modules and configuration options, allowing for extensive customization and optimization based on specific needs.",
+      "imageUrl": "/images/apachee.png"
+    },
+    {
+      "title": "PHP",
+      "description": "A server-side scripting language designed for web development but also used as a general-purpose language.",
+      "id": "9",
+      "body": "PHP (Hypertext Preprocessor) is a widely-used server-side scripting language primarily designed for web development. It can be embedded into HTML and interacts with databases to create dynamic web applications and handle server-side logic.",
+      "imageUrl": "/images/php.webp"
+    }
+  ],
+  "technologyTags": [
+    {
+      "id": "1",
+      "title": "JavaScript"
+    },
+    {
+      "id": "2",
+      "title": "React"
+    },
+    {
+      "id": "3",
+      "title": "Python"
+    },
+    {
+      "id": "4",
+      "title": "HTML"
+    },
+    {
+      "id": "5",
+      "title": "CSS"
+    },
+    {
+      "id": "6",
+      "title": "Bash"
+    },
+    {
+      "id": "7",
+      "title": "ZSH"
+    },
+    {
+      "id": "8",
+      "title": "Apache"
+    },
+    {
+      "id": "9",
+      "title": "PHP"
+    },
+    {
+      "id": "10",
+      "title": "Nginx"
+    }
+  ],
+  "metaTags": [
+    {
+      "id": "1",
+      "title": "Hoisting"
+    },
+    {
+      "id": "2",
+      "title": "Scope"
+    },
+    {
+      "id": "3",
+      "title": "ES6 Features"
+    },
+    {
+      "id": "4",
+      "title": "Arrow Functions"
+    },
+    {
+      "id": "5",
+      "title": "Function Declarations"
+    },
+    {
+      "id": "6",
+      "title": "Function Expressions"
+    },
+    {
+      "id": "7",
+      "title": "Closures"
+    },
+    {
+      "id": "8",
+      "title": "Promises"
+    },
+    {
+      "id": "9",
+      "title": "Async/Await"
+    },
+    {
+      "id": "10",
+      "title": "JSON"
+    },
+    {
+      "id": "11",
+      "title": "OOP"
+    },
+    {
+      "id": "12",
+      "title": "APIs"
+    },
+    {
+      "id": "13",
+      "title": "ECMAScript"
+    },
+    {
+      "id": "14",
+      "title": "Array Methods"
+    }
+  ],
+  "articles": [
+    {
+      "id": "1",
+      "title": "C.R.U.D.",
+      "description": "An introduction to CRUD operations and how they are implemented in various technologies.",
+      "body": "CRUD stands for Create, Read, Update, and Delete, which are the four basic operations of persistent storage. In this article, we'll explore how CRUD operations are implemented in different technologies, including SQL databases, NoSQL databases, and RESTful APIs.\n\n### Create\nCreating a new record in a database involves inserting new data. This can be done using SQL commands like `INSERT INTO` for SQL databases or using methods like `save()` for NoSQL databases.\n\n### Read\nReading data from a database involves querying the database to retrieve records. SQL databases use commands like `SELECT` while NoSQL databases may use methods like `find()`.\n\n### Update\nUpdating existing records in a database involves modifying the existing data. SQL databases use commands like `UPDATE` while NoSQL databases use methods like `update()` or `save()`.\n\n### Delete\nDeleting records involves removing data from the database. SQL databases use commands like `DELETE FROM` while NoSQL databases use methods like `remove()` or `delete()`.\n\nUnderstanding CRUD operations is fundamental to working with any form of persistent storage and is a key concept in software development.",
+      "technologyTags": [
+        "JavaScript",
+        "Python",
+        "PHP"
+      ],
+      "metaTags": [
+        "APIs",
+        "OOP"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Client-side Routing",
+      "description": "An overview of client-side routing in modern web applications, including how it works and common libraries used.",
+      "body": "Client-side routing allows for the navigation of web pages without refreshing the entire page. This is crucial for creating a seamless user experience in single-page applications (SPAs). In this article, we'll discuss how client-side routing works, its benefits, and popular libraries used for implementing it.\n\n### How Client-side Routing Works\nClient-side routing intercepts link clicks in your application and uses JavaScript to render the appropriate content, without making a full page request to the server. This is achieved using the History API to manipulate the browser history.\n\n### Benefits of Client-side Routing\n- **Improved User Experience**: Faster navigation as only part of the page is re-rendered.\n- **Reduced Server Load**: Fewer requests to the server can lead to improved performance and scalability.\n- **Rich Features**: Enables complex navigations and transitions without reloading the page.\n\n### Common Libraries\n- **React Router**: A popular library for implementing routing in React applications. It provides declarative routing, route parameters, and more.\n- **Vue Router**: Used for routing in Vue.js applications, offering similar features to React Router.\n- **Angular Router**: Angular's built-in solution for handling client-side routing in Angular applications.\n\nImplementing client-side routing can significantly enhance the performance and user experience of modern web applications.",
+      "technologyTags": [
+        "JavaScript",
+        "React",
+        "HTML"
+      ],
+      "metaTags": [
+        "APIs",
+        "ES6 Features"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Markup Language WYSIWYG",
+      "description": "Exploring WYSIWYG (What You See Is What You Get) editors for markup languages and their use in modern web development.",
+      "body": "WYSIWYG (What You See Is What You Get) editors provide a user-friendly interface for creating and editing content without needing to write HTML or other markup languages directly. In this article, we'll explore the benefits of using WYSIWYG editors, popular options available, and how they integrate with modern web development workflows.\n\n### Benefits of WYSIWYG Editors\n- **Ease of Use**: Allows non-technical users to create and edit content visually.\n- **Productivity**: Speeds up the content creation process by providing a familiar, word-processor-like interface.\n- **Consistency**: Ensures that content is consistently styled and formatted.\n\n### Popular WYSIWYG Editors\n- **TinyMCE**: A widely used, customizable WYSIWYG editor that supports various plugins and themes.\n- **CKEditor**: Known for its robust feature set, including image upload, table creation, and rich text formatting.\n- **Quill**: A lightweight, modern WYSIWYG editor with a focus on extensibility and simplicity.\n\n### Integration in Web Development\nWYSIWYG editors can be integrated into web applications to enable content management. They are often used in CMS (Content Management Systems) and other applications where user-generated content is a core feature. Integrating a WYSIWYG editor typically involves including the editor's library and initializing it on text areas or content fields.\n\nUsing WYSIWYG editors can greatly enhance the user experience in content-heavy applications by providing a simple and intuitive way to manage content.",
+      "technologyTags": [
+        "HTML",
+        "JavaScript",
+        "CSS"
+      ],
+      "metaTags": [
+        "APIs",
+        "JSON"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Difference between http-server, reload",
+      "description": "A detailed introduction to closures and their practical use cases.",
+      "body": "Closures are a fundamental concept in JavaScript that allows functions to retain access...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "Closures"
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Mastering JavaScript Array Methods: map, filter, and reduce",
+      "description": "An in-depth look at array methods for transforming and processing arrays in JavaScript.",
+      "body": "JavaScript provides powerful array methods for transforming and processing data...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "Array Methods"
+      ]
+    },
+    {
+      "id": "6",
+      "title": "The 'this' Keyword in JavaScript: Understanding Context",
+      "description": "Explore the behavior of the 'this' keyword in various contexts.",
+      "body": "The 'this' keyword in JavaScript refers to the context in which a function is executed...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "Scope"
+      ]
+    },
+    {
+      "id": "7",
+      "title": "How Async/Await Simplifies Asynchronous JavaScript",
+      "description": "Discover how async/await simplifies working with asynchronous code.",
+      "body": "Async/await is a syntax introduced in ES8 that simplifies handling asynchronous operations...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "Async/Await"
+      ]
+    },
+    {
+      "id": "8",
+      "title": "The Power of Promises: Chaining and Error Handling",
+      "description": "Learn about promises in JavaScript, including how to chain them and handle errors.",
+      "body": "Promises are a powerful feature in JavaScript for managing asynchronous operations...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "Promises"
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Understanding JSON: stringify and parse",
+      "description": "A guide to using JSON.stringify and JSON.parse for data serialization and deserialization.",
+      "body": "JSON (JavaScript Object Notation) is a widely used format for data interchange...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "JSON"
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Introduction to Object-Oriented Programming in JavaScript",
+      "description": "An overview of object-oriented programming (OOP) principles in JavaScript.",
+      "body": "Object-oriented programming (OOP) is a paradigm that organizes code into objects...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "OOP"
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Exploring JavaScript's Ecosystem: Frameworks and Libraries",
+      "description": "A comprehensive look at popular JavaScript frameworks and libraries.",
+      "body": "This article provides an overview of popular JavaScript frameworks and libraries...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "Hoisting"
+      ]
+    },
+    {
+      "id": "12",
+      "title": "The Rise of Python: Use Cases and Trends",
+      "description": "An overview of Python's growing popularity, its diverse applications, and emerging trends.",
+      "body": "Python's versatility has made it a popular choice for a wide range of applications...",
+      "technologyTags": [
+        "Python"
+      ],
+      "metaTags": [
+        "Hoisting"
+      ]
+    },
+    {
+      "id": "13",
+      "title": "A Guide to Modern React Practices",
+      "description": "Best practices and tips for working with React.",
+      "body": "React has become a staple in modern web development. This guide covers best practices...",
+      "technologyTags": [
+        "React"
+      ],
+      "metaTags": [
+        "Hoisting"
+      ]
+    },
+    {
+      "id": "14",
+      "title": "HTML and CSS: Building Blocks of the Web",
+      "description": "An exploration of HTML and CSS in web development.",
+      "body": "HTML and CSS are the cornerstones of web development. This article provides an in-depth look...",
+      "technologyTags": [
+        "HTML",
+        "CSS"
+      ],
+      "metaTags": [
+        "Hoisting"
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Mastering Bash and ZSH: A Comparison",
+      "description": "A comparison of Bash and ZSH for shell scripting and command-line tasks.",
+      "body": "Bash and ZSH are popular Unix shells used for command-line interactions and scripting...",
+      "technologyTags": [
+        "Bash",
+        "ZSH"
+      ],
+      "metaTags": [
+        "Hoisting"
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Apache vs Nginx: Choosing the Right Web Server",
+      "description": "A comparison of Apache and Nginx web servers.",
+      "body": "Apache and Nginx are two of the most widely used web servers. This article compares their performance...",
+      "technologyTags": [
+        "Apache",
+        "Nginx"
+      ],
+      "metaTags": [
+        "Hoisting"
+      ]
+    },
+    {
+      "id": "17",
+      "title": "PHP and Modern Web Development: A Look Ahead",
+      "description": "Examining PHP's role in modern web development.",
+      "body": "PHP remains a significant player in web development. This article examines how PHP has evolved...",
+      "technologyTags": [
+        "PHP"
+      ],
+      "metaTags": [
+        "Hoisting"
+      ]
+    },
+    {
+      "id": "18",
+      "title": "Understanding APIs: Definition and Usage",
+      "description": "This article explores the concept of APIs and their significance.",
+      "body": "API stands for Application Programming Interface. It is a set of rules and protocols that allows different software applications to communicate...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "APIs"
+      ]
+    },
+    {
+      "id": "19",
+      "title": "JavaScript and ECMAScript: Understanding ES5, ES6, and Beyond",
+      "description": "An overview of ECMAScript versions and their features.",
+      "body": "ECMAScript (ES) is the standard upon which JavaScript is based. This article provides an overview of the major features introduced in different ECMAScript versions...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "ECMAScript"
+      ]
+    },
+    {
+      "id": "20",
+      "title": "Setting Up a Development Environment for WSL",
+      "description": "A guide to setting up a Windows Subsystem for Linux development environment.",
+      "body": "WSL allows you to run a Linux distribution on Windows. This guide walks you through setting up your development environment...",
+      "technologyTags": [
+        "WSL"
+      ],
+      "metaTags": [
+        "Hoisting"
+      ]
+    },
+    {
+      "id": "21",
+      "title": "Understanding CSS Grid Layout",
+      "description": "A comprehensive guide to CSS Grid Layout and its features.",
+      "body": "CSS Grid Layout is a powerful layout system in CSS. It allows for two-dimensional layout with rows and columns...",
+      "technologyTags": [
+        "CSS"
+      ],
+      "metaTags": [
+        "CSS Grid"
+      ]
+    },
+    {
+      "id": "22",
+      "title": "Getting Started with Flexbox",
+      "description": "Learn the basics of Flexbox and how to create flexible layouts.",
+      "body": "Flexbox is a layout model in CSS designed for one-dimensional layouts. It simplifies aligning items and distributing space...",
+      "technologyTags": [
+        "CSS"
+      ],
+      "metaTags": [
+        "Flexbox"
+      ]
+    },
+    {
+      "id": "23",
+      "title": "Advanced DOM Manipulation Techniques",
+      "description": "Explore advanced techniques for manipulating the DOM in JavaScript.",
+      "body": "Manipulating the DOM is a crucial skill in web development. This article covers advanced techniques for efficiently interacting with DOM elements...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "DOM Manipulation"
+      ]
+    },
+    {
+      "id": "24",
+      "title": "Handling Events in JavaScript",
+      "description": "A guide to event handling and listeners in JavaScript.",
+      "body": "Event handling is an essential part of interactive web applications. This article covers various event types and how to manage them effectively...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "Event Handling"
+      ]
+    },
+    {
+      "id": "25",
+      "title": "Creating Responsive Designs with Media Queries",
+      "description": "Learn how to use media queries to create responsive web designs.",
+      "body": "Responsive design ensures your web application looks great on all devices. Media queries are used to apply styles based on screen size and other factors...",
+      "technologyTags": [
+        "CSS"
+      ],
+      "metaTags": [
+        "Responsive Design"
+      ]
+    },
+    {
+      "id": "26",
+      "title": "Regular Expressions: A Practical Guide",
+      "description": "An introduction to regular expressions and their practical applications.",
+      "body": "Regular expressions are used for pattern matching and text manipulation. This guide provides an overview of regex syntax and practical examples...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "Regular Expressions"
+      ]
+    },
+    {
+      "id": "27",
+      "title": "A Deep Dive into JavaScript Closures",
+      "description": "Explore JavaScript closures in depth and understand their use cases.",
+      "body": "Closures are a fundamental concept in JavaScript. This article delves into how closures work and provides practical examples of their use...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "Closures"
+      ]
+    },
+    {
+      "id": "28",
+      "title": "Exploring Modern JavaScript Syntax",
+      "description": "A look at the latest syntax features introduced in modern JavaScript.",
+      "body": "Modern JavaScript introduces new syntax and features with each ECMAScript version. This article covers some of the most significant updates...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "ES6 Features"
+      ]
+    },
+    {
+      "id": "29",
+      "title": "Understanding Asynchronous JavaScript",
+      "description": "An overview of asynchronous JavaScript, including callbacks, promises, and async/await.",
+      "body": "Asynchronous programming is crucial for handling tasks like API calls. This article explains the different approaches to asynchronous JavaScript...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "Async/Await",
+        "Promises"
+      ]
+    },
+    {
+      "id": "30",
+      "title": "Introduction to JavaScript APIs",
+      "description": "A beginner's guide to working with APIs in JavaScript.",
+      "body": "APIs allow different software systems to communicate. This article provides an introduction to using APIs in JavaScript, including fetching and handling data...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "APIs"
+      ]
+    },
+    {
+      "id": "31",
+      "title": "JavaScript Hoisting Explained",
+      "description": "Understanding the concept of hoisting and its implications in JavaScript.",
+      "body": "Hoisting is a JavaScript behavior where variable and function declarations are moved to the top of their scope. This article explains how hoisting works and its effects...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "Hoisting"
+      ]
+    },
+    {
+      "id": "32",
+      "title": "A Guide to JavaScript Function Declarations and Expressions",
+      "description": "Explore the differences between function declarations and function expressions in JavaScript.",
+      "body": "Function declarations and function expressions are two ways to define functions in JavaScript. This guide covers their differences and use cases...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "Function Declarations",
+        "Function Expressions"
+      ]
+    },
+    {
+      "id": "33",
+      "title": "JavaScript Arrow Functions: An Overview",
+      "description": "A look at arrow functions in JavaScript and their advantages over traditional function expressions.",
+      "body": "Arrow functions provide a concise syntax for writing functions. This article explains how they work and compares them to traditional function expressions...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "Arrow Functions"
+      ]
+    },
+    {
+      "id": "34",
+      "title": "Mastering JavaScript Array Methods",
+      "description": "A guide to using array methods such as map, filter, and reduce effectively.",
+      "body": "JavaScript array methods like map, filter, and reduce are powerful tools for working with arrays. This article provides an overview of these methods and their usage...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "Array Methods"
+      ]
+    },
+    {
+      "id": "35",
+      "title": "Exploring Object-Oriented Programming in JavaScript",
+      "description": "An introduction to object-oriented programming principles in JavaScript.",
+      "body": "Object-oriented programming (OOP) is a paradigm that uses objects and classes. This article explores how OOP concepts are implemented in JavaScript...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "OOP"
+      ]
+    },
+    {
+      "id": "36",
+      "title": "JavaScript Promises: Chaining and Error Handling",
+      "description": "Learn how to work with promises in JavaScript, including chaining and error handling.",
+      "body": "Promises are used for handling asynchronous operations in JavaScript. This article covers how to chain promises and handle errors effectively...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "Promises"
+      ]
+    },
+    {
+      "id": "37",
+      "title": "Using Async/Await for Asynchronous Operations",
+      "description": "A guide to using async/await syntax for handling asynchronous operations in JavaScript.",
+      "body": "Async/await provides a cleaner syntax for working with asynchronous code. This article explains how to use async/await and how it compares to promises...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "Async/Await"
+      ]
+    },
+    {
+      "id": "38",
+      "title": "JSON Basics: stringify and parse",
+      "description": "An introduction to working with JSON in JavaScript, including stringify and parse methods.",
+      "body": "JSON (JavaScript Object Notation) is a lightweight data interchange format. This article covers how to use JSON.stringify and JSON.parse to work with JSON data...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "JSON"
+      ]
+    },
+    {
+      "id": "39",
+      "title": "Setting Up Apache for Web Development",
+      "description": "A guide to installing and configuring Apache for web development.",
+      "body": "Apache is a popular web server used for hosting websites. This article walks you through setting up Apache on your development environment...",
+      "technologyTags": [
+        "Apache"
+      ],
+      "metaTags": [
+        "APIs"
+      ]
+    },
+    {
+      "id": "40",
+      "title": "Introduction to PHP Programming",
+      "description": "An overview of PHP programming and its usage in web development.",
+      "body": "PHP is a server-side scripting language used for web development. This article provides an introduction to PHP and its basic concepts...",
+      "technologyTags": [
+        "PHP"
+      ],
+      "metaTags": [
+        "APIs"
+      ]
+    },
+    {
+      "id": "41",
+      "title": "Understanding Variable Declarations: var, let, and const",
+      "description": "In JavaScript, understanding variable declarations is crucial for managing scope and immutability.",
+      "body": "In JavaScript, variable declarations are made using var, let, and const...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "Hoisting",
+        "Scope"
+      ]
+    },
+    {
+      "id": "42",
+      "title": "Arrow Functions vs Regular Functions",
+      "description": "Comparing arrow functions with traditional function expressions.",
+      "body": "Arrow functions offer a more concise syntax compared to traditional function expressions...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "Arrow Functions"
+      ]
+    },
+    {
+      "id": "43",
+      "title": "Converting Between Function Types: Declarations and Expressions",
+      "description": "Learn how to convert between function declarations and expressions.",
+      "body": "In JavaScript, functions can be defined as function declarations or function expressions...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "Function Declarations",
+        "Function Expressions"
+      ]
+    },
+    {
+      "id": "44",
+      "title": "Introduction to Closures in JavaScript",
+      "description": "A detailed introduction to closures and their practical use cases.",
+      "body": "Closures are a fundamental concept in JavaScript that allows functions to retain access...",
+      "technologyTags": [
+        "JavaScript"
+      ],
+      "metaTags": [
+        "Closures"
+      ]
+    }
+  ],
+  "log": [
+    {
+      "title": "Phase 1: Review",
+      "description": "JavaScript so far...",
+      "id": "1"
+    }
+  ],
+  "tools": [
+    {
+      "title": "Visual Studio Code",
+      "description": "A powerful source code editor...",
+      "id": "1",
+      "imageUrl": "/images/tools/vscode.webp"
+    },
+    {
+      "title": "Insomnia",
+      "description": "A powerful REST API Client...",
+      "id": "2",
+      "imageUrl": "/images/tools/insominia.png"
+    },
+    {
+      "title": "MySQL Workbench",
+      "description": "A unified visual tool for database architects...",
+      "id": "3",
+      "imageUrl": "/images/tools/mysqlworkbench.png"
+    },
+    {
+      "title": "PuTTY",
+      "description": "A free and open-source terminal emulator...",
+      "id": "4",
+      "imageUrl": "/images/tools/putty.png"
+    },
+    {
+      "title": "XMind",
+      "description": "An intuitive mind mapping software...",
+      "id": "5",
+      "imageUrl": "/images/tools/xmind2.png"
     }
   ]
 }

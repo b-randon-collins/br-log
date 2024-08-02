@@ -1,0 +1,28 @@
+/* body {
+  font-family: system-ui;
+}
+div#content-container {display: flex;}
+
+div#content-container > div {margin: 4px;padding: 3px;}
+
+nav#main-menu a {
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+    text-decoration:none;
+}
+
+nav#main-menu {
+    background: black;
+    text-align: center;
+}
+
+li {}
+
+nav#main-menu > ul > li {display: inline-flex;}
+
+nav#main-menu a:hover {
+    background: lightgrey;
+    color: black;
+}
+ */
